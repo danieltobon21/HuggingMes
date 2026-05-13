@@ -46,7 +46,7 @@ EXCLUDED_DIRS = {
     "node_modules",
     "venv",
 }
-EXCLUDED_TOP_LEVEL = {"logs", STATE_FILE.name}
+EXCLUDED_TOP_LEVEL = {"logs", STATE_FILE.name, "auth.json", "config.json"}
 if not INCLUDE_ENV:
     EXCLUDED_TOP_LEVEL.add(".env")
 
